@@ -1,0 +1,13 @@
+$base-font-size: 16;
+$base-color: #FFEE50;
+$font-sfns: 'SF NS Display', sans-serif;
+$font-gt: 'Gotham';
+$font-gtb: 'Gotham-book', $font-sfns;
+$font-din: 'DIN Condensed', $font-sfns;
+$font-lucida: 'LucidaGrande', $font-sfns;
+
+$font-apple: "Kepler-Std", $font-sfns;
+
+@function em($px){
+	@return $px / $base-font-size + 0rem;
+}

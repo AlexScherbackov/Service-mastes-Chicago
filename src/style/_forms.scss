@@ -1,0 +1,65 @@
+	.base-form {
+		box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		background-color: #ffffff;
+		padding: 55px 70px 60px;
+		display: inline-block;
+		@include max-screen(576px) {
+			padding: 30px;
+		}
+		&__title {
+			margin-bottom: 20px;
+			@include max-screen(576px) {
+				font-size: em(40);
+			}
+		}
+		&__input {
+			border-radius: 4px;
+			background-color: rgba(235, 235, 235, 0.6);
+			border: 0;
+			height: 50px;
+			padding-left: 15px;
+			width: 100%;
+			max-width: 48.4%;
+			margin-bottom: 15px;
+			color: $accent-text-color;
+			font-family: $fotn-mw;
+			font-size: em(14);
+			font-weight: 400;
+			&:nth-child(2n+1) {
+				margin-right: 3.2%;
+			}
+			@include max-screen(768px) {
+				max-width: 100%;
+				margin-right: 0 !important;
+			}
+		}
+		&__textarea {
+			border-radius: 4px;
+			background-color: rgba(235, 235, 235, 0.6);
+			border: 0;
+			height: 50px;
+			padding: 15px;
+			width: 100%;
+			min-height: 124px;
+			color: $accent-text-color;
+			font-family: $fotn-mw;
+			font-size: em(14);
+			font-weight: 400;
+		}
+		&__inputs-group {
+			flex-wrap: wrap;
+			display: flex;
+		}
+		&--medium {
+			max-width: 730px;
+			@include min-screen(768px) {
+				width: 730px;
+			}
+		}
+		&__h-submit {
+			text-align: center;
+			width: 100%;
+			margin-top: 15px;
+		}
+	}
